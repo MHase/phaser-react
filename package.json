@@ -21,8 +21,8 @@
         "vite"
     ],
     "scripts": {
-        "dev": "vite --config vite/config.dev.mjs",
-        "build": "vite build --config vite/config.prod.mjs"
+        "dev": "vite --config ./vite.config.dev.ts",
+        "build": "tsc && vite build --config ./vite.config.prod.ts"
     },
     "dependencies": {
         "phaser": "^3.80.1",
@@ -30,14 +30,18 @@
         "react-dom": "^18.2.0"
     },
     "devDependencies": {
+        "@types/node": "^20.11.20",
         "@types/react": "^18.2.58",
         "@types/react-dom": "^18.2.19",
+        "@typescript-eslint/eslint-plugin": "^7.0.2",
+        "@typescript-eslint/parser": "^7.0.2",
         "@vitejs/plugin-react": "^4.2.1",
         "eslint": "^8.57.0",
         "eslint-plugin-react": "^7.33.2",
         "eslint-plugin-react-hooks": "^4.6.0",
         "eslint-plugin-react-refresh": "^0.4.5",
         "terser": "^5.28.1",
+        "typescript": "^5.2.2",
         "vite": "^5.1.4"
     }
 }
